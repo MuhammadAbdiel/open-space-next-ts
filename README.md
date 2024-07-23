@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Open Space - Next.js & TypeScript
 
-## Getting Started
+Open Space adalah aplikasi diskusi di mana pengguna dapat membuat dan membalas "talks". Aplikasi ini dibuat menggunakan Next.js dan TypeScript.
 
-First, run the development server:
+## Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Autentikasi pengguna (Registrasi, Login, dan Logout)
+- Membuat, melihat, dan membalas "talks"
+- Notifikasi keberhasilan tindakan
+- Responsif dan mudah digunakan
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknologi yang Digunakan
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [js-cookie](https://github.com/js-cookie/js-cookie)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Instalasi
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone repositori ini
 
-## Learn More
+   ```bash
+   git clone https://github.com/username/open-space-next-ts.git
 
-To learn more about Next.js, take a look at the following resources:
+   cd open-space-next-ts
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install --force
+   ```
 
-## Deploy on Vercel
+3. Menjalankan eslint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run lint
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Melakukan format pada kode menggunakan prettier
+
+   ```bash
+   npm run format
+   ```
+
+5. Buat file `.env` dan isi dengan konfigurasi berikut
+
+   ```env
+   NEXT_PUBLIC_API=https://openspace-api.netlify.app/v1
+   ```
+
+6. Jalankan aplikasi
+
+   ```bash
+   npm run dev
+   ```
+
+7. Buka [http://localhost:3000](http://localhost:3000) di browser
+
+## Struktur Direktori
+
+- `components`: Komponen yang digunakan di halaman
+- `layouts`: Layout untuk tiap halaman
+- `pages`: Halaman yang sesuai dengan routing Next.js
+- `utils`: Fungsi untuk melakukan request API
+- `styles`: File CSS untuk styling aplikasi
+
+## Kontribusi
+
+1. Fork repositori ini
+2. Buat branch fitur baru (`git checkout -b feature-branch`)
+3. Commit perubahan yang telah dilakukan (`git commit -am 'Add new feature'`)
+4. Push ke branch tersebut (`git push origin feature-branch`)
+5. Buat pull request
+
+## Lisensi
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Deploy
+
+Aplikasi ini dideploy menggunakan [Vercel](https://vercel.com). Untuk mempelajari lebih lanjut tentang deploy aplikasi Next.js ke Vercel, silakan baca [Dokumentasi Resmi](https://nextjs.org/docs/deployment).
+
+---
+
+Demo Aplikasi : [Open Space](https://open-space-next-ts.netlify.app/)
