@@ -59,6 +59,15 @@ Open Space adalah aplikasi diskusi di mana pengguna dapat membuat dan membalas "
 
 7. Buka [http://localhost:3000](http://localhost:3000) di browser
 
+8. Untuk login, Anda dapat menggunakan akun berikut:
+
+   - Username: `ujicoba`
+   - Password: `password`
+
+   atau
+
+   Melakukan registrasi untuk membuat akun baru
+
 ## Struktur Direktori
 
 - `components`: Komponen yang digunakan di halaman
